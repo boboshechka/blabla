@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "lib": [
+            "es5", "es6", "dom", "dom.iterable"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "strictBindCallApply": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "outDir": "./dist",
+        "module": "commonjs",
+        "declaration": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "typeRoots": [
+            "node_modules/@types",
+            "typings"
+        ],
+        
+        "plugins": [
+            {
+                "name": "typescript-tslint-plugin",
+                "alwaysShowRuleFailuresAsWarnings": true,
+                "suppressWhileTypeErrorsPresent": false
+            }
+        ]
+    },
+    "include": [
+        "src"
+    ]
+}
